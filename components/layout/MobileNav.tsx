@@ -111,20 +111,19 @@ export function MobileNav() {
       </button>
 
       {/* Backdrop with blur */}
-      <div
-        className={cn(
-          "fixed inset-0 bg-cod-gray/60 backdrop-blur-sm z-40 transition-all duration-500",
-          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        )}
-        onClick={closeMenu}
-        aria-hidden="true"
-      />
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-cod-gray/60 backdrop-blur-sm z-40 animate-fade-in"
+          onClick={closeMenu}
+          aria-hidden="true"
+        />
+      )}
 
       {/* Mobile menu panel */}
       <div
         className={cn(
-          "fixed top-0 right-0 h-[100dvh] w-[85vw] max-w-[380px] z-50 transform transition-all duration-500 ease-out",
-          isOpen ? "translate-x-0" : "translate-x-full"
+          "fixed top-0 right-0 h-[100dvh] w-[85vw] max-w-[380px] z-50 transform transition-transform duration-500 ease-out overflow-hidden",
+          isOpen ? "translate-x-0 visible" : "translate-x-full invisible pointer-events-none"
         )}
       >
         {/* Gradient background */}
