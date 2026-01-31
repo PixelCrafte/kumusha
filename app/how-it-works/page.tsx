@@ -69,7 +69,7 @@ export default function HowItWorksPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <Card className="bg-thunderbird text-white text-center">
-                <div className="text-4xl font-bold mb-2">48hrs</div>
+                <div className="text-4xl font-bold mb-2">24hrs</div>
                 <Text size="sm" className="text-mandys-pink">
                   Average proposal time
                 </Text>

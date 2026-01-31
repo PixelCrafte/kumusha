@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
       <Hero
         title="Transform Idle Assets Into"
-        titleHighlight="Income-Generating Opportunities"
+        titleHighlight="Steady Income"
         description="Kumusha Asset Managers specializes in converting underperforming assets—vehicles, real estate, farms, and businesses—into profitable ventures. Whether you're in Zimbabwe or abroad, we put your assets to work."
         primaryCTA={{ label: "Get Started", href: "/contact" }}
         secondaryCTA={{ label: "See How It Works", href: "/how-it-works" }}

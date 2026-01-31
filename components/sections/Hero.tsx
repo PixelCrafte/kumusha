@@ -74,6 +74,7 @@ export function Hero({
               )}
             </div>
           </div>
+            <span className="text-white block my-4">Unlocking Value, Preserving Wealth</span>
         </div>
       </Container>
     </section>

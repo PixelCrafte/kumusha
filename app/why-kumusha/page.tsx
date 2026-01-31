@@ -58,19 +58,13 @@ export default function WhyKumushaPage() {
                 Our Story
               </Heading>
               <Text size="lg" className="text-tundora mb-4">
-                Kumusha Asset Managers was born from a simple observation: too many 
-                valuable assets in Zimbabwe sit idle while their owners—many living 
-                abroad—watch them depreciate.
+                Kumusha Asset Managers was founded on the insight that many valuable assets in Zimbabwe remain idle, causing their owners, often Zimbabweans living abroad, to experience unnecessary depreciation.
               </Text>
               <Text className="text-tundora mb-4">
-                We set out to change that. By combining local expertise with 
-                professional management standards, we&apos;ve created a model that 
-                transforms underperforming assets into income-generating opportunities.
+                  We set out to change this by blending deep local market expertise with rigorous professional management standards. The result is a proven model that transforms underperforming assets into sustainable, income‑generating opportunities.              
               </Text>
               <Text className="text-tundora">
-                Today, we manage over 500 assets across vehicles, real estate, farms, 
-                and businesses, disbursing millions to our partner asset owners every 
-                month.
+                  Today, Kumusha Asset Managers oversees a diversified portfolio of over 150 assets including vehicles, commercial and residential properties, delivering monthly distributions worth thousands to our partner asset owners.              
               </Text>
             </div>
           </div>

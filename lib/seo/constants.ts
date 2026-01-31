@@ -9,12 +9,13 @@ export const COMPANY_INFO = {
   name: "Kumusha Asset Managers",
   legalName: "Kumusha Asset Managers (Pvt) Ltd",
   address: {
-    street: "123 Samora Machel Ave",
+    street: "82 Blakeway Drive, Belvedere",
     city: "Harare",
     country: "Zimbabwe",
   },
-  phone: "+263 77 123 4567",
-  email: "info@kumusha.co.zw",
+  phone: "+263 77 778 0571",
+  phone2: "+263 77 577 4000",
+  email: "info@kumushaassetszw.co.zw",
   hours: {
     weekdays: "8:00 AM – 5:00 PM",
     saturday: "9:00 AM – 1:00 PM",
