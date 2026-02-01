@@ -69,7 +69,7 @@ export default function VehiclesPage() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} hover className="h-full">
+                <Card key={index} hover className="h-full" data-aos="fade-up" data-aos-delay={index * 100}>
                   <div className="w-14 h-14 bg-mandys-pink/50 rounded-xl flex items-center justify-center mb-6">
                     <Icon className="h-7 w-7 text-thunderbird" />
                   </div>
@@ -98,7 +98,7 @@ export default function VehiclesPage() {
       <Section background="muted">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-right">
               <Image
                 src="https://images.unsplash.com/photo-1449965408869-ebd3fee56fd3?w=800&q=80"
                 alt="Fleet of vehicles"
@@ -108,22 +108,24 @@ export default function VehiclesPage() {
               />
             </div>
             <div>
-              <Heading level={2} className="text-cod-gray mb-4">
+              <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-left">
                 Ideal For
               </Heading>
-              <Text size="lg" className="text-tundora mb-6">
+              <Text size="lg" className="text-tundora mb-6" data-aos="fade-left" data-aos-delay="100">
                 Our vehicle management services are designed for asset owners who 
                 want to generate income without the hassle of day-to-day operations.
               </Text>
               <ul className="space-y-4 mb-8">
                 {idealFor.map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                  <li key={index} className="flex items-center gap-3" data-aos="fade-left" data-aos-delay={150 + index * 50}>
                     <div className="w-2 h-2 bg-thunderbird rounded-full" />
                     <Text className="text-tundora">{item}</Text>
                   </li>
                 ))}
               </ul>
-              <Button href="/contact">Start Earning From Your Vehicle</Button>
+              <div data-aos="fade-left" data-aos-delay="400">
+                <Button href="/contact">Start Earning From Your Vehicle</Button>
+              </div>
             </div>
           </div>
         </Container>

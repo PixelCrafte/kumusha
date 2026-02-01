@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils/cn";
 
-interface CardProps {
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   className?: string;
   hover?: boolean;
@@ -19,6 +19,7 @@ export function Card({
   className,
   hover = false,
   padding = "md",
+  ...props
 }: CardProps) {
   return (
     <div
@@ -28,6 +29,7 @@ export function Card({
         paddingStyles[padding],
         className
       )}
+      {...props}
     >
       {children}
     </div>

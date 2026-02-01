@@ -69,7 +69,7 @@ export default function BusinessesPage() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} hover className="h-full">
+                <Card key={index} hover className="h-full" data-aos="fade-up" data-aos-delay={index * 100}>
                   <div className="w-14 h-14 bg-mandys-pink/50 rounded-xl flex items-center justify-center mb-6">
                     <Icon className="h-7 w-7 text-thunderbird" />
                   </div>
@@ -98,7 +98,7 @@ export default function BusinessesPage() {
       <Section background="muted">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-right">
               <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
                 alt="Business operations"
@@ -108,22 +108,24 @@ export default function BusinessesPage() {
               />
             </div>
             <div>
-              <Heading level={2} className="text-cod-gray mb-4">
+              <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-left">
                 Ideal For
               </Heading>
-              <Text size="lg" className="text-tundora mb-6">
+              <Text size="lg" className="text-tundora mb-6" data-aos="fade-left" data-aos-delay="100">
                 Our business management services are designed for owners who need 
                 professional management without giving up ownership.
               </Text>
               <ul className="space-y-4 mb-8">
                 {idealFor.map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                  <li key={index} className="flex items-center gap-3" data-aos="fade-left" data-aos-delay={150 + index * 50}>
                     <div className="w-2 h-2 bg-thunderbird rounded-full" />
                     <Text className="text-tundora">{item}</Text>
                   </li>
                 ))}
               </ul>
-              <Button href="/contact">Let&apos;s Activate Your Business</Button>
+              <div data-aos="fade-left" data-aos-delay="350">
+                <Button href="/contact">Let&apos;s Activate Your Business</Button>
+              </div>
             </div>
           </div>
         </Container>

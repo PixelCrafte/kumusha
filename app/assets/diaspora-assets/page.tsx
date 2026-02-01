@@ -65,7 +65,7 @@ export default function DiasporaAssetsPage() {
       {/* What We Manage */}
       <Section background="white">
         <Container>
-          <div className="text-center mb-12">
+          <div className="text-center mb-12" data-aos="fade-up">
             <Heading level={2} className="text-cod-gray mb-4">
               What We Manage for You
             </Heading>
@@ -76,7 +76,7 @@ export default function DiasporaAssetsPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {assetTypes.map((asset, index) => (
-              <Card key={index} hover padding="none" className="overflow-hidden">
+              <Card key={index} hover padding="none" className="overflow-hidden" data-aos="fade-up" data-aos-delay={index * 100}>
                 <div className="relative h-40">
                   <Image
                     src={asset.image}
@@ -105,10 +105,10 @@ export default function DiasporaAssetsPage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Heading level={2} className="text-cod-gray mb-4">
+              <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-right">
                 Built for Remote Owners
               </Heading>
-              <Text size="lg" className="text-tundora mb-6">
+              <Text size="lg" className="text-tundora mb-6" data-aos="fade-right" data-aos-delay="100">
                 We understand your challenges—distance, time zones, trust concerns. 
                 Our service is designed specifically for diaspora asset owners.
               </Text>
@@ -116,7 +116,7 @@ export default function DiasporaAssetsPage() {
                 {features.map((feature, index) => {
                   const Icon = feature.icon;
                   return (
-                    <div key={index}>
+                    <div key={index} data-aos="fade-up" data-aos-delay={150 + index * 100}>
                       <div className="w-10 h-10 bg-mandys-pink/50 rounded-lg flex items-center justify-center mb-3">
                         <Icon className="h-5 w-5 text-thunderbird" />
                       </div>
@@ -131,7 +131,7 @@ export default function DiasporaAssetsPage() {
                 })}
               </div>
             </div>
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-left">
               <Image
                 src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80"
                 alt="Global connectivity"
@@ -148,10 +148,10 @@ export default function DiasporaAssetsPage() {
       <Section background="dark">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <Heading level={2} className="text-white mb-4">
+            <Heading level={2} className="text-white mb-4" data-aos="fade-up">
               Trust & Transparency
             </Heading>
-            <Text size="lg" className="text-stack mb-8">
+            <Text size="lg" className="text-stack mb-8" data-aos="fade-up" data-aos-delay="100">
               Every transaction documented. Every decision communicated. We operate 
               as if your assets were our own.
             </Text>
@@ -161,7 +161,7 @@ export default function DiasporaAssetsPage() {
                 { value: "Monthly", label: "Detailed Reports" },
                 { value: "24/7", label: "Portal Access" },
               ].map((stat, index) => (
-                <div key={index} className="bg-white/10 rounded-xl p-6">
+                <div key={index} className="bg-white/10 rounded-xl p-6" data-aos="zoom-in" data-aos-delay={150 + index * 100}>
                   <div className="text-3xl font-bold text-thunderbird mb-1">
                     {stat.value}
                   </div>

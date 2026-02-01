@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils/cn";
 
 type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 
-interface HeadingProps {
+interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   level: HeadingLevel;
   children: React.ReactNode;
   className?: string;
@@ -18,11 +18,11 @@ const headingStyles: Record<HeadingLevel, string> = {
   6: "text-base md:text-lg font-medium",
 };
 
-export function Heading({ level, children, className, as }: HeadingProps) {
+export function Heading({ level, children, className, as, ...props }: HeadingProps) {
   const Component = as || (`h${level}` as `h${HeadingLevel}`);
 
   return (
-    <Component className={cn(headingStyles[level], className)}>
+    <Component className={cn(headingStyles[level], className)} {...props}>
       {children}
     </Component>
   );

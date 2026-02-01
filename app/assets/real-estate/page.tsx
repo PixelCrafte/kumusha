@@ -62,7 +62,7 @@ export default function RealEstatePage() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} hover className="h-full">
+                <Card key={index} hover className="h-full" data-aos="fade-up" data-aos-delay={index * 100}>
                   <div className="w-14 h-14 bg-mandys-pink/50 rounded-xl flex items-center justify-center mb-6">
                     <Icon className="h-7 w-7 text-thunderbird" />
                   </div>
@@ -92,10 +92,10 @@ export default function RealEstatePage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Heading level={2} className="text-cod-gray mb-4">
+              <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-right">
                 Why Property Owners Trust Kumusha
               </Heading>
-              <Text size="lg" className="text-tundora mb-6">
+              <Text size="lg" className="text-tundora mb-6" data-aos="fade-right" data-aos-delay="100">
                 Managing property is complex—tenants, maintenance, compliance, and 
                 market dynamics. We handle it all so you can enjoy the returns 
                 without the stress.
@@ -108,15 +108,17 @@ export default function RealEstatePage() {
                   "24/7 emergency response for tenants",
                   "Legal compliance management",
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                  <li key={index} className="flex items-center gap-3" data-aos="fade-right" data-aos-delay={150 + index * 50}>
                     <Check className="w-5 h-5 text-thunderbird" />
                     <Text className="text-tundora">{item}</Text>
                   </li>
                 ))}
               </ul>
-              <Button href="/contact">Submit Your Property</Button>
+              <div data-aos="fade-right" data-aos-delay="400">
+                <Button href="/contact">Submit Your Property</Button>
+              </div>
             </div>
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-left">
               <Image
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
                 alt="Modern property"

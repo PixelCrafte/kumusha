@@ -24,13 +24,13 @@ export function CTA({
     <Section background="primary">
       <Container>
         <div className="text-center max-w-3xl mx-auto">
-          <Heading level={2} className="text-white mb-4">
+          <Heading level={2} className="text-white mb-4" data-aos="fade-up">
             {title}
           </Heading>
-          <Text size="lg" className="text-mandys-pink mb-8">
+          <Text size="lg" className="text-mandys-pink mb-8" data-aos="fade-up" data-aos-delay="100">
             {description}
           </Text>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
             <Button href={primaryCTA.href} variant="white" size="lg">
               {primaryCTA.label}
               <ArrowRight className="ml-2 h-5 w-5" />

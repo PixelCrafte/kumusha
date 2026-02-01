@@ -5,7 +5,7 @@ export function Process() {
   return (
     <Section background="muted">
       <Container>
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <Heading level={2} className="text-cod-gray mb-4">
             How It Works
           </Heading>
@@ -19,7 +19,7 @@ export function Process() {
           {processSteps.map((step) => {
             const Icon = step.icon;
             return (
-              <Card key={step.step} hover className="relative">
+              <Card key={step.step} hover className="relative" data-aos="fade-up" data-aos-delay={(step.step - 1) * 100}>
                 {/* Step number */}
                 <div className="absolute -top-4 -left-2 w-10 h-10 bg-thunderbird text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                   {step.step}

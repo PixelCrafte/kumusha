@@ -30,7 +30,7 @@ export function Testimonials() {
   return (
     <Section background="muted">
       <Container>
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <Heading level={2} className="text-cod-gray mb-4">
             What Our Partners Say
           </Heading>
@@ -42,7 +42,7 @@ export function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="relative">
+            <Card key={index} className="relative" data-aos="fade-up" data-aos-delay={index * 100}>
               <Quote className="absolute top-6 right-6 h-8 w-8 text-mandys-pink" />
               <div className="pt-2">
                 <Text className="text-tundora mb-6 italic">

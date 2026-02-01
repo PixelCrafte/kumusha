@@ -51,7 +51,7 @@ export default function ContactPage() {
         <Container>
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Form */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3" data-aos="fade-right">
               <Card padding="lg">
                 <Heading level={3} className="text-cod-gray mb-2">
                   Submit Your Asset
@@ -67,7 +67,7 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-6">
               {/* Contact Methods */}
-              <Card>
+              <Card data-aos="fade-left" data-aos-delay="100">
                 <Heading level={4} className="text-cod-gray mb-4">
                   Reach Us Directly
                 </Heading>
@@ -111,7 +111,7 @@ export default function ContactPage() {
               </Card>
 
               {/* Diaspora Notice */}
-              <Card className="bg-cod-gray text-white">
+              <Card className="bg-cod-gray text-white" data-aos="fade-left" data-aos-delay="200">
                 <div className="flex items-start gap-3">
                   <Video className="h-6 w-6 text-thunderbird shrink-0 mt-1" />
                   <div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
               </Card>
 
               {/* Map placeholder */}
-              <Card padding="none" className="overflow-hidden">
+              <Card padding="none" className="overflow-hidden" data-aos="fade-left" data-aos-delay="300">
                 <div className="relative h-48 bg-desert-storm flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="h-8 w-8 text-thunderbird mx-auto mb-2" />

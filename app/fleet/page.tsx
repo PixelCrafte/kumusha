@@ -92,7 +92,7 @@ export default function FleetPage() {
       <Section background="white">
         <Container>
           {/* Filters */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-2 mb-8" data-aos="fade-up">
             {categories.map((category) => (
               <button
                 key={category}
@@ -105,8 +105,8 @@ export default function FleetPage() {
 
           {/* Vehicle Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {vehicles.map((vehicle) => (
-              <Card key={vehicle.id} hover padding="none" className="overflow-hidden">
+            {vehicles.map((vehicle, index) => (
+              <Card key={vehicle.id} hover padding="none" className="overflow-hidden" data-aos="fade-up" data-aos-delay={index * 50}>
                 {/* Image */}
                 <div className="relative h-48">
                   <Image
@@ -172,15 +172,15 @@ export default function FleetPage() {
       <Section background="muted">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <Heading level={2} className="text-cod-gray mb-4">
+            <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-up">
               Own a Vehicle? List It With Us
             </Heading>
-            <Text size="lg" className="text-tundora mb-8">
+            <Text size="lg" className="text-tundora mb-8" data-aos="fade-up" data-aos-delay="100">
               Turn your idle vehicle into a revenue stream. We handle everything—
               marketing, vetting, maintenance, and customer service. You earn 
               passive income.
             </Text>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
               <Button href="/assets/vehicles">Learn About Vehicle Management</Button>
               <Button href="/contact" variant="outline">
                 List Your Vehicle

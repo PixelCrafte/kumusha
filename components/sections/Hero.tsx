@@ -42,25 +42,25 @@ export function Hero({
 
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full z-0">
-        <div className="absolute top-20 right-20 w-72 h-72 bg-thunderbird/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-40 w-96 h-96 bg-contessa/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-20 w-72 h-72 bg-thunderbird/20 rounded-full blur-3xl" data-aos="fade" data-aos-delay="400" />
+        <div className="absolute bottom-20 right-40 w-96 h-96 bg-contessa/10 rounded-full blur-3xl" data-aos="fade" data-aos-delay="500" />
       </div>
 
       <Container className="relative z-10">
         <div className="py-20 md:py-28 lg:py-36">
           <div className="max-w-3xl">
-            <Heading level={1} className="text-white mb-6">
+            <Heading level={1} className="text-white mb-6" data-aos="fade-up">
               {title}{" "}
               {titleHighlight && (
                 <span className="text-thunderbird">{titleHighlight}</span>
               )}
             </Heading>
 
-            <Text size="xl" className="text-stack mb-8 max-w-2xl">
+            <Text size="xl" className="text-stack mb-8 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
               {description}
             </Text>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
               {primaryCTA && (
                 <Button href={primaryCTA.href} size="lg">
                   {primaryCTA.label}
@@ -74,7 +74,7 @@ export function Hero({
               )}
             </div>
           </div>
-            <span className="text-white block my-4">Unlocking Value, Preserving Wealth</span>
+            <span className="text-white block my-4" data-aos="fade-up" data-aos-delay="300">Unlocking Value, Preserving Wealth</span>
         </div>
       </Container>
     </section>

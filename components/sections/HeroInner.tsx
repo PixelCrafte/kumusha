@@ -32,16 +32,18 @@ export function HeroInner({
           )}
         >
           {badge && (
-            <span className="inline-block px-4 py-1 mb-4 text-sm font-medium text-thunderbird bg-mandys-pink/50 rounded-full">
+            <span className="inline-block px-4 py-1 mb-4 text-sm font-medium text-thunderbird bg-mandys-pink/50 rounded-full" data-aos="fade-down">
               {badge}
             </span>
           )}
-          <Heading level={1} className={cn(background === "dark" ? "text-white" : "text-cod-gray", "mb-4")}>
+          <Heading level={1} className={cn(background === "dark" ? "text-white" : "text-cod-gray", "mb-4")} data-aos="fade-up">
             {title}
           </Heading>
           <Text
             size="lg"
             className={cn(background === "dark" ? "text-stack" : "text-tundora")}
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             {description}
           </Text>

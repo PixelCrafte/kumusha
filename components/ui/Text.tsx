@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils/cn";
 
-interface TextProps {
+interface TextProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
   className?: string;
   size?: "sm" | "base" | "lg" | "xl";
@@ -21,6 +21,7 @@ export function Text({
   size = "base",
   muted = false,
   as: Component = "p",
+  ...props
 }: TextProps) {
   return (
     <Component
@@ -30,6 +31,7 @@ export function Text({
         muted && "text-stack",
         className
       )}
+      {...props}
     >
       {children}
     </Component>

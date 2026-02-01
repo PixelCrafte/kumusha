@@ -44,7 +44,7 @@ export default function WhyKumushaPage() {
       <Section background="muted">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-right">
               <Image
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
                 alt="Kumusha team"
@@ -54,16 +54,16 @@ export default function WhyKumushaPage() {
               />
             </div>
             <div>
-              <Heading level={2} className="text-cod-gray mb-4">
+              <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-left">
                 Our Story
               </Heading>
-              <Text size="lg" className="text-tundora mb-4">
+              <Text size="lg" className="text-tundora mb-4" data-aos="fade-left" data-aos-delay="100">
                 Kumusha Asset Managers was founded on the insight that many valuable assets in Zimbabwe remain idle, causing their owners, often Zimbabweans living abroad, to experience unnecessary depreciation.
               </Text>
-              <Text className="text-tundora mb-4">
+              <Text className="text-tundora mb-4" data-aos="fade-left" data-aos-delay="200">
                   We set out to change this by blending deep local market expertise with rigorous professional management standards. The result is a proven model that transforms underperforming assets into sustainable, income‑generating opportunities.              
               </Text>
-              <Text className="text-tundora">
+              <Text className="text-tundora" data-aos="fade-left" data-aos-delay="300">
                   Today, Kumusha Asset Managers oversees a diversified portfolio of over 150 assets including vehicles, commercial and residential properties, delivering monthly distributions worth thousands to our partner asset owners.              
               </Text>
             </div>
@@ -74,7 +74,7 @@ export default function WhyKumushaPage() {
       {/* Our Values */}
       <Section background="white">
         <Container>
-          <div className="text-center mb-12">
+          <div className="text-center mb-12" data-aos="fade-up">
             <Heading level={2} className="text-cod-gray mb-4">
               Our Values
             </Heading>
@@ -84,7 +84,7 @@ export default function WhyKumushaPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {values.map((value, index) => (
-              <Card key={index} hover>
+              <Card key={index} hover data-aos="fade-up" data-aos-delay={index * 100}>
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-thunderbird text-white rounded-full flex items-center justify-center font-bold shrink-0">
                     {index + 1}

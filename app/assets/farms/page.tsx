@@ -62,7 +62,7 @@ export default function FarmsPage() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card key={index} hover className="h-full">
+                <Card key={index} hover className="h-full" data-aos="fade-up" data-aos-delay={index * 100}>
                   <div className="w-14 h-14 bg-mandys-pink/50 rounded-xl flex items-center justify-center mb-6">
                     <Icon className="h-7 w-7 text-thunderbird" />
                   </div>
@@ -92,10 +92,10 @@ export default function FarmsPage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Heading level={2} className="text-cod-gray mb-4">
+              <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-right">
                 Transparent Farm Reporting
               </Heading>
-              <Text size="lg" className="text-tundora mb-6">
+              <Text size="lg" className="text-tundora mb-6" data-aos="fade-right" data-aos-delay="100">
                 Receive regular updates on every aspect of your farm&apos;s 
                 operations. Know exactly how your agricultural asset is performing.
               </Text>
@@ -108,15 +108,17 @@ export default function FarmsPage() {
                   "Photo and video documentation",
                   "Input cost breakdowns",
                 ].map((item, index) => (
-                  <li key={index} className="flex items-center gap-3">
+                  <li key={index} className="flex items-center gap-3" data-aos="fade-right" data-aos-delay={150 + index * 50}>
                     <Check className="w-5 h-5 text-thunderbird" />
                     <Text className="text-tundora">{item}</Text>
                   </li>
                 ))}
               </ul>
-              <Button href="/contact">Activate Your Farm</Button>
+              <div data-aos="fade-right" data-aos-delay="450">
+                <Button href="/contact">Activate Your Farm</Button>
+              </div>
             </div>
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-left">
               <Image
                 src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80"
                 alt="Farm landscape"

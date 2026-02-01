@@ -20,7 +20,7 @@ export default function TermsOfServicePage() {
 
       <Section background="white">
         <Container>
-          <div className="max-w-3xl mx-auto prose prose-lg">
+          <div className="max-w-3xl mx-auto prose prose-lg" data-aos="fade-up">
             <Heading level={2} className="text-cod-gray mb-4">
               Agreement to Terms
             </Heading>

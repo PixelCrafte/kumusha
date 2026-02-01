@@ -41,17 +41,17 @@ export default function HowItWorksPage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Heading level={2} className="text-cod-gray mb-4">
+              <Heading level={2} className="text-cod-gray mb-4" data-aos="fade-right">
                 What Makes Us Different
               </Heading>
-              <Text size="lg" className="text-tundora mb-8">
+              <Text size="lg" className="text-tundora mb-8" data-aos="fade-right" data-aos-delay="100">
                 Unlike traditional asset managers, we operate on a partnership model. 
                 Your success is our success, and every decision we make is designed 
                 to maximize your returns.
               </Text>
               <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                  <li key={index} className="flex items-start gap-3" data-aos="fade-right" data-aos-delay={150 + index * 50}>
                     <div className="w-6 h-6 bg-thunderbird rounded-full flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-4 h-4 text-white" />
                     </div>
@@ -68,25 +68,25 @@ export default function HowItWorksPage() {
               </ul>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <Card className="bg-thunderbird text-white text-center">
+              <Card className="bg-thunderbird text-white text-center" data-aos="zoom-in" data-aos-delay="0">
                 <div className="text-4xl font-bold mb-2">24hrs</div>
                 <Text size="sm" className="text-mandys-pink">
                   Average proposal time
                 </Text>
               </Card>
-              <Card className="bg-desert-storm text-center">
+              <Card className="bg-desert-storm text-center" data-aos="zoom-in" data-aos-delay="100">
                 <div className="text-4xl font-bold text-thunderbird mb-2">0%</div>
                 <Text size="sm" className="text-tundora">
                   Upfront fees
                 </Text>
               </Card>
-              <Card className="bg-desert-storm text-center">
+              <Card className="bg-desert-storm text-center" data-aos="zoom-in" data-aos-delay="200">
                 <div className="text-4xl font-bold text-thunderbird mb-2">100%</div>
                 <Text size="sm" className="text-tundora">
                   Transparency
                 </Text>
               </Card>
-              <Card className="bg-cod-gray text-white text-center">
+              <Card className="bg-cod-gray text-white text-center" data-aos="zoom-in" data-aos-delay="300">
                 <div className="text-4xl font-bold mb-2">24/7</div>
                 <Text size="sm" className="text-stack">
                   Asset monitoring
@@ -101,7 +101,7 @@ export default function HowItWorksPage() {
       <Section background="muted">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-12" data-aos="fade-up">
               <Heading level={2} className="text-cod-gray mb-4">
                 Frequently Asked Questions
               </Heading>
@@ -137,7 +137,7 @@ export default function HowItWorksPage() {
                     "Absolutely! Our diaspora asset management service is specifically designed for Zimbabweans living abroad. We handle everything locally while keeping you fully informed.",
                 },
               ].map((faq, index) => (
-                <Card key={index}>
+                <Card key={index} data-aos="fade-up" data-aos-delay={index * 100}>
                   <Heading level={4} className="text-cod-gray mb-2">
                     {faq.question}
                   </Heading>

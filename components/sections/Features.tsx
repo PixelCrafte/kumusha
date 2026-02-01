@@ -5,7 +5,7 @@ export function Features() {
   return (
     <Section background="white">
       <Container>
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <Heading level={2} className="text-cod-gray mb-4">
             Why Choose Kumusha
           </Heading>
@@ -19,7 +19,7 @@ export function Features() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <Card key={index} hover>
+              <Card key={index} hover data-aos="fade-up" data-aos-delay={index * 100}>
                 <div className="w-12 h-12 bg-mandys-pink/50 rounded-lg flex items-center justify-center mb-4">
                   <Icon className="h-6 w-6 text-thunderbird" />
                 </div>

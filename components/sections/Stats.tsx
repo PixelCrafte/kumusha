@@ -5,7 +5,7 @@ export function Stats() {
   return (
     <Section background="dark">
       <Container>
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <Heading level={2} className="text-white mb-4">
             Trusted by Asset Owners
           </Heading>
@@ -17,7 +17,7 @@ export function Stats() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center" data-aos="zoom-in" data-aos-delay={index * 100}>
               <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-thunderbird mb-2">
                 {stat.value}
               </div>

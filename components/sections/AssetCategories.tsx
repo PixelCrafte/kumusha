@@ -8,7 +8,7 @@ export function AssetCategories() {
   return (
     <Section background="white">
       <Container>
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <Heading level={2} className="text-cod-gray mb-4">
             Asset Classes We Manage
           </Heading>
@@ -19,10 +19,10 @@ export function AssetCategories() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {assetCategories.map((category) => {
+          {assetCategories.map((category, index) => {
             const Icon = category.icon;
             return (
-              <Link key={category.slug} href={category.href} className="group">
+              <Link key={category.slug} href={category.href} className="group" data-aos="fade-up" data-aos-delay={index * 100}>
                 <Card hover padding="none" className="overflow-hidden h-full">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">

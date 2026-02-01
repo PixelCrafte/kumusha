@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Header, Footer, SkipToContent } from "@/components/layout";
+import { AOSProvider } from "@/components/providers";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/jsonLd";
 import { SITE_NAME, SITE_URL, DEFAULT_DESCRIPTION } from "@/lib/seo/constants";
 import "./globals.css";
@@ -110,6 +111,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
+        <AOSProvider />
         <SkipToContent />
         <Header />
         <main id="main-content" className="flex-1">

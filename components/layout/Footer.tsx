@@ -21,7 +21,7 @@ export function Footer() {
         <div className="py-12 lg:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Brand Column */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1" data-aos="fade-up">
               <Link href="/" className="flex items-center gap-2 mb-4">
                 <svg
                   viewBox="0 0 40 40"
@@ -86,7 +86,7 @@ export function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <h3 className="text-white font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-3">
                 {footerNavigation.quickLinks.map((link) => (
@@ -103,7 +103,7 @@ export function Footer() {
             </div>
 
             {/* Asset Types */}
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
               <h3 className="text-white font-semibold mb-4">Asset Types</h3>
               <ul className="space-y-3">
                 {footerNavigation.assetTypes.map((link) => (
@@ -120,7 +120,7 @@ export function Footer() {
             </div>
 
             {/* Contact Info */}
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
               <h3 className="text-white font-semibold mb-4">Contact Us</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
