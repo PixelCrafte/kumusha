@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import { Users, Fuel, Settings } from "lucide-react";
 import { pageMetadata } from "@/lib/seo/metadata";
 import { HeroInner, CTA } from "@/components/sections";
-import { Container, Section, Heading, Text, Card, Badge, Button } from "@/components/ui";
+import { Container, Section, Heading, Text, Button } from "@/components/ui";
+import { VehicleCard } from "@/components/fleet";
 
 export const metadata: Metadata = pageMetadata.fleet;
 
@@ -11,73 +10,129 @@ export const metadata: Metadata = pageMetadata.fleet;
 const vehicles = [
   {
     id: 1,
-    name: "Toyota Hilux 2022",
-    category: "Pickup",
-    image: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=600&q=80",
-    price: "$85/day",
-    seats: 5,
-    fuel: "Diesel",
-    transmission: "Automatic",
-    available: true,
-  },
-  {
-    id: 2,
-    name: "Honda Fit 2021",
-    category: "Sedan",
-    image: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&q=80",
-    price: "$45/day",
+    name: "Honda Fit GD1",
+    category: "Hatchback",
+    image: "/images/honda-fit-gd1.jpeg",
+    price: "$45/day 200km",
     seats: 5,
     fuel: "Petrol",
     transmission: "Automatic",
     available: true,
   },
   {
-    id: 3,
-    name: "Toyota Quantum 2020",
-    category: "Minibus",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80",
-    price: "$120/day",
-    seats: 15,
-    fuel: "Diesel",
-    transmission: "Manual",
-    available: true,
+    id:2,
+    name:"Honda Fit GE6",
+    category:"Hatchback",
+    image:"/images/honda-fit-ge6.jpeg",
+    price:"$50/day 200km",
+    seats:5,
+    fuel:"Petrol",
+    transmission:"Automatic",
+    available:true,
   },
   {
-    id: 4,
-    name: "Mazda CX-5 2023",
-    category: "SUV",
-    image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&q=80",
-    price: "$95/day",
-    seats: 5,
-    fuel: "Petrol",
-    transmission: "Automatic",
-    available: false,
+    id:3,
+    name:"Toyota Aqua",
+    category:"Hatchback",
+    image:"/images/toyota-aqua.jpeg",
+    price:"$55/day 200km",
+    seats:5,
+    fuel:"Petrol",
+    transmission:"Automatic",
+    available:true,
   },
   {
-    id: 5,
-    name: "Isuzu KB 2021",
-    category: "Pickup",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    price: "$80/day",
-    seats: 5,
-    fuel: "Diesel",
-    transmission: "Manual",
-    available: true,
+    id:4,
+    name:"Honda Shuttle GP7",
+    category:"Wagon",
+    image:"/images/honda-shuttle-gp7.jpeg",
+    price:"$55/day 200km",
+    seats:5,
+    fuel:"Petrol",
+    transmission:"Automatic",
+    available:true,
+  },
+    {
+    id:5,
+    name:"Nissan Xtrial",
+    category:"SUV",
+    image:"/images/nissan-xtrial.jpeg",
+    price:"$65/day 200km",
+    seats:5,
+    fuel:"Petrol",
+    transmission:"Automatic",
+    available:true,
   },
   {
-    id: 6,
-    name: "Toyota Corolla 2022",
-    category: "Sedan",
-    image: "https://images.unsplash.com/photo-1623869675781-80aa31012a5a?w=600&q=80",
-    price: "$55/day",
-    seats: 5,
-    fuel: "Petrol",
-    transmission: "Automatic",
-    available: true,
+    id:6,
+    name:"Toyota Fortuner",
+    category:"SUV",
+    image:"/images/toyota-fortuner.jpeg",
+    price:"$160/day 48hrs",
+    seats:7,
+    fuel:"Petrol",
+    transmission:"Automatic",
+    available:true,
   },
+  {
+    id:7,
+    name:"Toyota Hilux",
+    category:"Pickup",
+    image:"/images/toyota-hilux.jpeg",
+    price:"$160/day 48hrs",
+    seats:5,
+    fuel:"Petrol",
+    transmission:"Manual",
+    available:true,
+  },
+  {
+    id:8,
+    name:"Nissan NP300",
+    category:"Pickup",
+    image:"/images/nissan-np300.jpeg",
+    price:"$90/day 48hrs",
+    seats:5,
+    fuel:"Diesel",
+    transmission:"Manual",
+    available:true,
+  },
+  {
+    id:9,
+    name:"Toyota Dyna",
+    category:"Lorry",
+    image:"/images/toyota-dyna.jpeg",
+    price:"Available on request",
+    seats:5,
+    fuel:"Diesel",
+    transmission:"Manual",
+    available:true,
+  },
+  {
+    id:10,
+    name:"Toyota Quantum",
+    category:"Minibus",
+    image:"/images/toyota-quantum.jpeg",
+    price:"Available on request",
+    seats:5,
+    fuel:"Petrol",
+    transmission:"Automatic",
+    available:true,
+  },
+  {
+    id:11,
+    name:"Toyota Travel Class",
+    category:"Minibus",
+    image:"/images/toyota-travel-class.jpeg",
+    price:"Available on request",
+    seats:5,
+    fuel:"Diesel",
+    transmission:"Manual",
+    available:true,
+  },
+
 ];
 
-const categories = ["All", "Sedan", "SUV", "Pickup", "Minibus"];
+// const categories = ["All", "Hatchback", "Wagon", "SUV", "Pickup", "Minibus", "Lorry"];
 
 export default function FleetPage() {
   return (
@@ -92,7 +147,7 @@ export default function FleetPage() {
       <Section background="white">
         <Container>
           {/* Filters */}
-          <div className="flex flex-wrap gap-2 mb-8" data-aos="fade-up">
+          {/* <div className="flex flex-wrap gap-2 mb-8" data-aos="fade-up">
             {categories.map((category) => (
               <button
                 key={category}
@@ -101,68 +156,12 @@ export default function FleetPage() {
                 {category}
               </button>
             ))}
-          </div>
+          </div> */}
 
           {/* Vehicle Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {vehicles.map((vehicle, index) => (
-              <Card key={vehicle.id} hover padding="none" className="overflow-hidden" data-aos="fade-up" data-aos-delay={index * 50}>
-                {/* Image */}
-                <div className="relative h-48">
-                  <Image
-                    src={vehicle.image}
-                    alt={vehicle.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute top-3 left-3">
-                    <Badge variant={vehicle.available ? "success" : "warning"}>
-                      {vehicle.available ? "Available" : "Reserved"}
-                    </Badge>
-                  </div>
-                  <div className="absolute top-3 right-3">
-                    <Badge>{vehicle.category}</Badge>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-5">
-                  <div className="flex items-start justify-between mb-3">
-                    <Heading level={4} className="text-cod-gray">
-                      {vehicle.name}
-                    </Heading>
-                    <div className="text-thunderbird font-bold">
-                      {vehicle.price}
-                    </div>
-                  </div>
-
-                  {/* Specs */}
-                  <div className="flex items-center gap-4 text-sm text-tundora mb-4">
-                    <div className="flex items-center gap-1">
-                      <Users className="h-4 w-4" />
-                      <span>{vehicle.seats}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Fuel className="h-4 w-4" />
-                      <span>{vehicle.fuel}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Settings className="h-4 w-4" />
-                      <span>{vehicle.transmission}</span>
-                    </div>
-                  </div>
-
-                  <Button
-                    href="/contact"
-                    variant={vehicle.available ? "primary" : "outline"}
-                    size="sm"
-                    className="w-full"
-                  >
-                    {vehicle.available ? "Book Now" : "Join Waitlist"}
-                  </Button>
-                </div>
-              </Card>
+              <VehicleCard key={vehicle.id} vehicle={vehicle} index={index} />
             ))}
           </div>
         </Container>
