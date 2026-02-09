@@ -32,6 +32,7 @@ export default function HowItWorksPage() {
         badge="Our Process"
         title="How Kumusha Asset Managers Works"
         description="From assessment to activation, we handle everything—you earn passively. Our proven 4-step process transforms your idle assets into consistent income streams."
+        image="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
       />
 
       <Process />

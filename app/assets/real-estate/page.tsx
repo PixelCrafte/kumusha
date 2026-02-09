@@ -53,6 +53,7 @@ export default function RealEstatePage() {
         badge="Real Estate Management"
         title="Real Estate Asset Management"
         description="Maximize your property's earning potential. Vacant or underperforming properties drain value. Kumusha Asset Managers transforms your real estate into reliable, income-generating assets."
+        image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80"
       />
 
       {/* Services Grid */}

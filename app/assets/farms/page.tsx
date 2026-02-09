@@ -53,6 +53,7 @@ export default function FarmsPage() {
         badge="Farm Management"
         title="Farm Asset Management"
         description="From idle land to productive harvests. Farmland and agricultural equipment sitting idle? Kumusha Asset Managers activates your farming assets, manages operations, and delivers returns."
+        image="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1600&q=80"
       />
 
       {/* Services Grid */}

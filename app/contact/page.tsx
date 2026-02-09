@@ -45,6 +45,7 @@ export default function ContactPage() {
         badge="Get In Touch"
         title="Contact Us"
         description="Ready to activate your idle assets? Contact Kumusha Asset Managers for a free consultation. Submit your asset details or reach us directly."
+        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&q=80"
       />
 
       <Section background="white">

@@ -36,6 +36,7 @@ export default function WhyKumushaPage() {
         badge="Our Difference"
         title="Why Choose Kumusha Asset Managers"
         description="We're not just managers—we're partners invested in your asset's success. Discover what makes Kumusha the trusted choice for asset owners across Zimbabwe and the diaspora."
+        image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80"
       />
 
       <Features />

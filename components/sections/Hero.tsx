@@ -63,12 +63,12 @@ export function Hero({
           src={image}
           alt=""
           fill
-          className="object-cover opacity-20 scale-105"
+          className="object-cover opacity-40 scale-105"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-cod-gray/95 via-cod-gray/80 to-cod-gray/60" />
-        <div className="absolute inset-0 bg-linear-to-t from-cod-gray via-transparent to-cod-gray/50" />
+        <div className="absolute inset-0 bg-linear-to-r from-cod-gray/80 via-cod-gray/50 to-cod-gray/30" />
+        <div className="absolute inset-0 bg-linear-to-t from-cod-gray/70 via-transparent to-cod-gray/40" />
       </div>
 
       {/* Animated Floating Elements */}

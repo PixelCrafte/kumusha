@@ -60,6 +60,7 @@ export default function VehiclesPage() {
         badge="Vehicle Management"
         title="Vehicle Asset Management"
         description="Your vehicle. Our expertise. Shared profits. Whether you own a single car or an entire fleet, Kumusha Asset Managers transforms idle vehicles into consistent income streams."
+        image="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1600&q=80"
       />
 
       {/* Services Grid */}

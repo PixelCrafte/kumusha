@@ -11,6 +11,7 @@ export default function AssetsPage() {
         badge="Our Services"
         title="Asset Classes We Manage"
         description="From vehicles to farms, Kumusha Asset Managers activates idle assets across multiple categories. Explore our specialized management services and find the right solution for your assets."
+        image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
       />
       <AssetCategories />
       <CTA

@@ -60,6 +60,7 @@ export default function BusinessesPage() {
         badge="Business Management"
         title="Business Asset Management"
         description="Revive, operate, and profit. Idle or struggling businesses represent untapped potential. Kumusha Asset Managers steps in to operate, optimize, and turn your business into a profitable venture."
+        image="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80"
       />
 
       {/* Services Grid */}

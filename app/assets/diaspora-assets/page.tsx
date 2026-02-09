@@ -60,6 +60,7 @@ export default function DiasporaAssetsPage() {
         badge="For Zimbabweans Abroad"
         title="Diaspora Asset Management"
         description="Your assets in Zimbabwe. Managed with integrity. Living abroad shouldn't mean watching your assets deteriorate. Kumusha Asset Managers provides trusted, transparent management for Zimbabweans in the diaspora."
+        image="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=80"
       />
 
       {/* What We Manage */}

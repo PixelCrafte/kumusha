@@ -141,6 +141,7 @@ export default function FleetPage() {
         badge="Our Fleet"
         title="Browse Available Vehicles"
         description="Quality-assured vehicles available for rent or purchase. Every vehicle in our fleet is inspected, maintained, and ready for you."
+        image="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1600&q=80"
       />
 
       {/* Fleet Listing */}
