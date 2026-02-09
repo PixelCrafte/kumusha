@@ -25,7 +25,7 @@ export const processSteps: ProcessStep[] = [
     step: 2,
     title: "Strategy Proposal",
     description:
-      "Within 48 hours, you'll receive a tailored proposal outlining how we'll activate your asset—whether through rentals, refurbishment, resale, or operational management.",
+      "Within 24 hours, you'll receive a tailored proposal outlining how we'll activate your asset—whether through rentals, refurbishment, resale, or operational management.",
     icon: FileText,
   },
   {

@@ -16,7 +16,7 @@ interface CTAProps {
 
 export function CTA({
   title = "Ready to Unlock Your Asset's Potential?",
-  description = "Get started today. Our team will assess your asset and propose a tailored activation strategy within 48 hours.",
+  description = "Get started today. Our team will assess your asset and propose a tailored activation strategy within 24 hours.",
   primaryCTA = { label: "Get Started", href: "/contact" },
   secondaryCTA = { label: "Learn How It Works", href: "/how-it-works" },
 }: CTAProps) {
