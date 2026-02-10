@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Phone,
   Mail,
@@ -23,24 +24,13 @@ export function Footer() {
             {/* Brand Column */}
             <div className="lg:col-span-1" data-aos="fade-up">
               <Link href="/" className="flex items-center gap-2 mb-4">
-                <svg
-                  viewBox="0 0 40 40"
-                  className="h-10 w-10"
-                  aria-hidden="true"
-                >
-                  <circle cx="20" cy="20" r="20" fill="#c41719" />
-                  <text
-                    x="20"
-                    y="26"
-                    textAnchor="middle"
-                    fill="white"
-                    fontSize="18"
-                    fontWeight="bold"
-                    fontFamily="system-ui"
-                  >
-                    K
-                  </text>
-                </svg>
+                <Image
+                  src="/kumusha-logo.png"
+                  alt="Kumusha Asset Managers"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 rounded-full object-cover"
+                />
                 <div className="flex flex-col">
                   <span className="text-lg font-bold text-white leading-tight">
                     Kumusha

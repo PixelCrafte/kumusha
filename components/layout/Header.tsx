@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone } from "lucide-react";
 import { Container, Button } from "@/components/ui";
 import { mainNavigation } from "@/lib/constants/navigation";
@@ -31,26 +32,14 @@ export function Header() {
         <nav className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <div className="relative">
-              <svg
-                viewBox="0 0 40 40"
-                className="h-10 w-10 lg:h-12 lg:w-12"
-                aria-hidden="true"
-              >
-                <circle cx="20" cy="20" r="20" fill="#c41719" />
-                <text
-                  x="20"
-                  y="26"
-                  textAnchor="middle"
-                  fill="white"
-                  fontSize="18"
-                  fontWeight="bold"
-                  fontFamily="system-ui"
-                >
-                  K
-                </text>
-              </svg>
-            </div>
+            <Image
+              src="/kumusha-logo.png"
+              alt="Kumusha Asset Managers"
+              width={48}
+              height={48}
+              className="h-10 w-10 lg:h-12 lg:w-12 rounded-full object-cover"
+              priority
+            />
             <div className="flex flex-col">
               <span className="text-lg lg:text-xl font-bold text-thunderbird leading-tight">
                 Kumusha

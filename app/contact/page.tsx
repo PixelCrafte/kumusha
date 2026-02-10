@@ -128,18 +128,31 @@ export default function ContactPage() {
                 </div>
               </Card>
 
-              {/* Map placeholder */}
+              {/* Interactive Map */}
               <Card padding="none" className="overflow-hidden" data-aos="fade-left" data-aos-delay="300">
-                <div className="relative h-48 bg-desert-storm flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-8 w-8 text-thunderbird mx-auto mb-2" />
-                    <Text size="sm" muted>
-                      {COMPANY_INFO.address.street}
-                    </Text>
-                    <Text size="sm" muted>
-                      {COMPANY_INFO.address.city}, {COMPANY_INFO.address.country}
-                    </Text>
-                  </div>
+                <div className="relative h-64">
+                  <iframe
+                    title="Kumusha Asset Managers Location"
+                    src={`https://www.google.com/maps?q=${encodeURIComponent('82 Blakeway Drive, Belvedere, Harare, Zimbabwe')}&output=embed`}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+                <div className="p-3 bg-white border-t border-border">
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${COMPANY_INFO.address.street}, ${COMPANY_INFO.address.city}, ${COMPANY_INFO.address.country}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-thunderbird hover:text-roof-terracotta transition-colors font-medium"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    Get Directions — {COMPANY_INFO.address.street}, {COMPANY_INFO.address.city}
+                  </a>
                 </div>
               </Card>
             </div>

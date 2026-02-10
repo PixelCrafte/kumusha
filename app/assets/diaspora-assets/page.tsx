@@ -34,22 +34,22 @@ const assetTypes = [
   {
     title: "Vehicles",
     description: "Rentals, maintenance, and resale",
-    image: "https://images.unsplash.com/photo-1449965408869-ebd3fee56fd3?w=400&q=80",
+    image: "/gallery/keysfront.jpg",
   },
   {
     title: "Properties",
     description: "Tenant management, rent collection, maintenance",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
   },
   {
     title: "Farms",
     description: "Agricultural operations and production",
-    image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80",
   },
   {
     title: "Businesses",
     description: "Operational management and turnaround",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    image: "/gallery/contract.jpg",
   },
 ];
 
@@ -134,7 +134,7 @@ export default function DiasporaAssetsPage() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-left">
               <Image
-                src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80"
+                src="/gallery/asset_mgt.jpg"
                 alt="Global connectivity"
                 fill
                 className="object-cover"

@@ -27,7 +27,7 @@ export const assetCategories: AssetCategory[] = [
       "Cars, trucks, buses, and fleet vehicles. We offer rental programs, professional refurbishment, and strategic resale.",
     icon: Car,
     href: "/assets/vehicles",
-    image: "https://images.unsplash.com/photo-1449965408869-ebd3fee56fd3?w=800&q=80",
+    image: "/gallery/keysfront.jpg",
     features: [
       "Rental programs with vetted customers",
       "Professional refurbishment services",
@@ -59,7 +59,7 @@ export const assetCategories: AssetCategory[] = [
       "Struggling or idle businesses. We provide operational turnaround, management, and profit optimization services.",
     icon: Briefcase,
     href: "/assets/businesses",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    image: "/gallery/contract.jpg",
     features: [
       "Operational management",
       "Business turnaround strategies",
@@ -91,7 +91,8 @@ export const assetCategories: AssetCategory[] = [
       "For Zimbabweans abroad. We manage your assets locally with full transparency and regular reporting.",
     icon: Globe,
     href: "/assets/diaspora-assets",
-    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80",
+    image: "/gallery/asset_mgt.jpg",
+    //image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80",
     features: [
       "Digital reporting and updates",
       "Photo/video documentation",

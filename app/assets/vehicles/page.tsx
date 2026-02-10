@@ -101,7 +101,7 @@ export default function VehiclesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-right">
               <Image
-                src="https://images.unsplash.com/photo-1449965408869-ebd3fee56fd3?w=800&q=80"
+                src="/gallery/carkeys.jpg"
                 alt="Fleet of vehicles"
                 fill
                 className="object-cover"

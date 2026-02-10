@@ -101,7 +101,7 @@ export default function BusinessesPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-2xl overflow-hidden" data-aos="fade-right">
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+                src="/gallery/contract.jpg"
                 alt="Business operations"
                 fill
                 className="object-cover"
