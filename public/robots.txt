@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.kumushaassetszw.co.zw
+
+# Sitemaps
+Sitemap: https://www.kumushaassetszw.co.zw/sitemap.xml
